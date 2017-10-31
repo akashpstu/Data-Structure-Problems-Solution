@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
+## Welcome to Data Structures Problem Solutions Github Pages
 
-You can use the [editor on GitHub](https://github.com/akashpstu/Data-Structure-Problems-Solution/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### In this page/reposatory, you can find codes for Data Structure related problems in Computer Science.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### Linked List - 
+A complete code of Linked List with all the functions
+1. Create Linked List
+2. Read Linked List Data
+3. Search Linked List Data
+4. Delete Linked List Data
 
-### Markdown
+Demo Code - 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```c
 
-```markdown
-Syntax highlighted code block
+#include<stdio.h>
+#include<stdlib.h>
+typedef struct Node
+{
+        int data;
+        struct Node *next;
+}node;
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+void insert(node *pointer, int data)
+{
 
-1. Numbered
-2. List
+        while(pointer->next!=NULL)
+        {
+                pointer = pointer -> next;
+        }
 
-**Bold** and _Italic_ and `Code` text
+        pointer->next = (node *)malloc(sizeof(node));
+        pointer = pointer->next;
+        pointer->data = data;
+        pointer->next = NULL;
+}
 
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### Link - <a href="https://github.com/akashpstu/Data-Structure-Problems-Solution/blob/master/LinkedListFull.c" class="btn">Linked List Complete Code </a>
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/akashpstu/Data-Structure-Problems-Solution/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble with Pages? Just Send me a mail  <a href="mailto:manirujjamanakash@gmail.com">manirujjamanakash@gmail.com</a>. I'm here to help some lovely coder.
